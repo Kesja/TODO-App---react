@@ -14,14 +14,14 @@ const ColumnForm = () => {
         dispatch({ type: 'ADD_COLUMN', payload: { title, icon } });
         setTitle('');
         setIcon('');
-     };
+    };
 
-	return (
+    return (
         <form onSubmit={handleSubmit} className={styles.columnForm}>
             <label>Title:</label><TextInput type="text" value={title} onChange={e => setTitle(e.target.value)} />
             <label>Icon:</label><TextInput type="text" value={icon} onChange={e => setIcon(e.target.value)} />
             <Button>Add column</Button>
         </form>
-	);
+    );
 };
 export default ColumnForm;
