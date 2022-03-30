@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 	return (
-		<nav className = {styles.navBar}>
+		<nav className={styles.navBar}>
 			<div className={styles.container}>
 				<Link className={styles.icon} to="/">
-					<span className={' fa fa-tasks'}/>
+					<span className={' fa fa-tasks'} />
 				</Link>
 				<ul className={styles.navList}>
 					<li className={styles.navElem}>
@@ -16,8 +16,8 @@ const NavBar = () => {
 						<Link to="/favorite">Favorite</Link>
 					</li>
 					<li className={styles.navElem}>
-					<Link to="/about">About</Link>
-					</li> 
+						<Link to="/about">About</Link>
+					</li>
 				</ul>
 			</div>
 		</nav>
