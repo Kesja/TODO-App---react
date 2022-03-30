@@ -24,7 +24,7 @@ const SearchForm = () => {
         <span className="fa fa-search" />
       </Button>
     </form>
-    );
+  );
 };
 
 export default SearchForm;

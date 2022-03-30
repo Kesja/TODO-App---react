@@ -3,13 +3,13 @@ import SearchForm from "../SearchForm/SearchForm";
 import List from '../List/List';
 
 const Home = () => {
-	return (
-		<>
-			<Hero />
-			<SearchForm />
-			<List />
-		</>
-	);
+  return (
+    <>
+      <Hero />
+      <SearchForm />
+      <List />
+    </>
+  );
 };
 
 export default Home;
