@@ -19,7 +19,7 @@
   text-decoration: none;
 
   &:hover {
-    color: $color-success;
+    color: $color-warning;
   }
 }
 
@@ -33,15 +33,22 @@
     font-size: 15px;
   }
 
+  .linkActive {
+    color: $color-warning;
+    text-decoration: none;
+  }
+
   a {
     text-decoration: none;
     color: white;
     font-weight: 600;
 
     &:hover {
-      color: $color-success;
+      color: $color-warning;
     }
   }
 }
+
+
 
 
