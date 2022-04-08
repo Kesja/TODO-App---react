@@ -1,8 +1,8 @@
 import styles from './Lists.module.scss';
 import { useDispatch, useSelector } from "react-redux";
-import { getAllLists } from "../../redux/store";
+import { getAllLists } from "../../redux/listsRedux";
 import { Link } from "react-router-dom";
-import { addList } from '../../redux/store';
+import { addList } from '../../redux/listsRedux';
 import { useState } from 'react';
 import TextInput from '../TextInput/TextInput';
 import Button from '../Button/Button';

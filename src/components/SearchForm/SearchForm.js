@@ -3,24 +3,28 @@ import TextInput from '../TextInput/TextInput';
 import Button from '../Button/Button';
 import { useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
-import { searchFeald } from '../../redux/store';
+import { searchFeald } from '../../redux/searchStringRedux';
+import { useLocation } from 'react-router-dom';
 
 
 const SearchForm = () => {
 
   const [searchString, setSearchString] = useState('');
   const dispatch = useDispatch();
+  const location = useLocation();
 
   const handleSubmit = e => {
     e.preventDefault();
     dispatch(searchFeald(searchString));
     setSearchString('');
   };
-
+  
   useEffect(() => {
+    if (location.pathname === "/" ) {
     dispatch(searchFeald(''))
-  }, []);
-
+    }
+  });
+  
   return (
     <form onSubmit={handleSubmit} className={styles.searchForm}>
       <TextInput onChange={e => setSearchString(e.target.value)} value={searchString}  placeholder="Search..." />
