@@ -23,7 +23,8 @@ const SearchForm = () => {
     if (location.pathname === "/" ) {
     dispatch(searchFeald(''))
     }
-  });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.pathname]);
   
   return (
     <form onSubmit={handleSubmit} className={styles.searchForm}>
